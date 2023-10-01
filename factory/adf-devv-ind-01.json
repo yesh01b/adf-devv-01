@@ -8,5 +8,10 @@
 			}
 		}
 	},
-	"location": "eastus"
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "01de70fe-9ca2-4147-be12-a1706e1bfe1d",
+		"tenantId": "ded48db1-3ee4-4bae-abdf-841ad71064b7"
+	}
 }
