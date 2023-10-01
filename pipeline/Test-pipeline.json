@@ -1,6 +1,18 @@
 {
 	"name": "Test-pipeline",
 	"properties": {
+		"activities": [
+			{
+				"name": "Fail1",
+				"type": "Fail",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"message": "Test failed",
+					"errorCode": "test failed"
+				}
+			}
+		],
 		"annotations": []
 	}
 }
