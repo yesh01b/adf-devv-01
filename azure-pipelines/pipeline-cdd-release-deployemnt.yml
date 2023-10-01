@@ -19,7 +19,7 @@ stages:
         subscriptionEndpoint: 'spn-adf-test-ind-01'
         adfName: 'adf-test-01'
         adfOverrideParameters: ''
-        adfFolder: 'adf-cust-cdd-release-01'
+        adfFolder: 'adf-devv-ind-01'
         resourceGroup: 'rg-adf-test-ind-01'
         deployParameterFileName: 'adf-cdd-relaease-test-uks-01'
 
@@ -32,6 +32,6 @@ stages:
         subscriptionEndpoint: 'spn-adf-Stage-ind-01'
         adfName: 'adf-stage-01'
         adfOverrideParameters: ''
-        adfFolder: 'adf-cust-cdd-release-01'
+        adfFolder: 'adf-devv-ind-01'
         resourceGroup: 'rg-adf-stage-ind-01'
         deployParameterFileName: 'adf-cdd-relaease-stage-uks-01'
