@@ -2,7 +2,7 @@
 	"name": "adf-devv-ind-01",
 	"properties": {
 		"globalParameters": {
-			"testparameter": {
+			"test": {
 				"type": "string",
 				"value": "01"
 			}
