@@ -1,0 +1,37 @@
+trigger: none
+pr: none
+
+resources:
+  repositories:
+  - repository: datafactory
+    type: github
+    name: yesh01b/adf-devv-01
+    endpoint: yesh01b
+    ref: 'adf_publish'
+
+stages:
+- stage: Deploy_test_uks
+  displayName: Deploy to Test environment
+  jobs:
+    - template: ./templates/adf-deploy.yml
+      parameters:
+        environment: 'test'
+        subscriptionEndpoint: 'spn-adf-test-ind-01'
+        adfName: 'adf-test-ind-01'
+        adfOverrideParameters: ''
+        adfFolder: 'adf-devv-ind-01'
+        resourceGroup: 'rg-adf-test-ind-01'
+        deployParameterFileName: 'adf-cdd-relaease-test-uks-01'
+
+- stage: Deploy_Stage_uks
+  displayName: Deploy to Stage environment
+  jobs:
+    - template: ./templates/adf-deploy.yml
+      parameters:
+        environment: 'stage'
+        subscriptionEndpoint: 'spn-adf-Stage-ind-01'
+        adfName: 'adf-stage-ind-01'
+        adfOverrideParameters: ''
+        adfFolder: 'adf-devv-ind-01'
+        resourceGroup: 'rg-adf-stage-ind-01'
+        deployParameterFileName: 'adf-cdd-relaease-stage-uks-01'
