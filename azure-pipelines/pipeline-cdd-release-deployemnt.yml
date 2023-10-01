@@ -19,7 +19,7 @@ stages:
         subscriptionEndpoint: 'spn-adf-test-ind-01'
         adfName: 'adf-test-ind-01'
         adfOverrideParameters: ''
-        adfFolder: 'adf-cust-cdd-release-01'
+        adfFolder: 'adf-devv-01'
         resourceGroup: 'rg-adf-test-ind-01'
         deployParameterFileName: 'adf-cdd-relaease-test-uks-01'
 
