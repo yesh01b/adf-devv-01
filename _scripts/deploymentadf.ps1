@@ -18,7 +18,7 @@ Write-Host "Getting triggers"
 $triggersADF = Get-AzDataFactoryV2Trigger -DataFactoryName $DataFactoryName - ResourceGroupName $ResourceGroupName
 $triggersTemplate = $resources | where-object { $_.type -eq "Microsoft.DataFactory/factories/triggers" }
 $triggerNames = $triggersTemplate | ForEach-Object {$_.name.Substring(37, $_.name.Length-40)}
-$activeTriggernames = $triggersTemplate | where-object { $_.properties.runtimeState -eq "started" -and ($_.properties.pipelines.Count -gt 0 -or $_,properties.pipeline.pipelineReference -ne $null)} | ForEach-Object {$_.name.Substring(37, $_.name.Length-40)}
+$activeTriggernames = $triggersTemplate | where-object { $_.properties.runtimeState -eq "started" -and ($_.properties.pipelines.Count -gt 0 -or $_.properties.pipeline.pipelineReference -ne $null)} | ForEach-Object {$_.name.Substring(37, $_.name.Length-40)}
 $deletedtriggers = $triggersADF | where-object { $triggerNames -notcontains $_.name }
 $triggerstostop = $triggerNames | where { (triggersADF | Select-object name).name -contains $_ }
 
