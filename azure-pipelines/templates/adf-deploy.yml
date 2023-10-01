@@ -47,7 +47,7 @@ jobs:
             resourceGroupName: ${{ parameters.resourceGroup }}
             location: '$(azureLocation)'
             csmFile: '$(Pipeline.Workspace)/adf_publish/${{ parameters.adfFolder }}/ARMTemplateForFactory.json'
-            cdsmParametersFile: '$(Pipeline.Workspace)/self/armtemplate/${{ parameters.environment }}/${{ parameters.deploymentParameterFileName }}.json'
+            cdsmParametersFile: '$(Pipeline.Workspace)/self/armtemplate/${{ parameters.environment }}/${{ parameters.deployParameterFileName }}.json'
             overrideParameters: -fatoryName ${{ parameters.adfName }} ${{ parameters.adfOverrideParameters }}
         - task: AzurePowerShell@4
           displayName: 'Azure PowerShell Script: Start ADF triggers'
