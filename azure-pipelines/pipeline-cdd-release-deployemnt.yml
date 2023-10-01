@@ -28,7 +28,7 @@ stages:
   jobs:
     - template: ./templates/adf-deploy.yml
       parameters:
-        environment: 'Stage'
+        environment: 'stage'
         subscriptionEndpoint: 'spn-adf-Stage-ind-01'
         adfName: 'adf-stage-01'
         adfOverrideParameters: ''
