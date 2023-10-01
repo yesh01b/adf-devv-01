@@ -17,7 +17,7 @@ stages:
       parameters:
         environment: 'test'
         subscriptionEndpoint: 'spn-adf-test-ind-01'
-        adfName: 'adf-test-01'
+        adfName: 'adf-test-ind-01'
         adfOverrideParameters: ''
         adfFolder: 'adf-devv-ind-01'
         resourceGroup: 'rg-adf-test-ind-01'
@@ -30,7 +30,7 @@ stages:
       parameters:
         environment: 'stage'
         subscriptionEndpoint: 'spn-adf-Stage-ind-01'
-        adfName: 'adf-stage-01'
+        adfName: 'adf-stage-ind-01'
         adfOverrideParameters: ''
         adfFolder: 'adf-devv-ind-01'
         resourceGroup: 'rg-adf-stage-ind-01'
