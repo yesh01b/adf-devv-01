@@ -22,3 +22,16 @@ stages:
         adfFolder: 'adf-cust-cdd-release-01'
         resourceGroup: 'rg-adf-test-ind-01'
         deployParameterFileName: 'adf-cdd-relaease-test-uks-01'
+
+- stage: Deploy_Stage_uks
+  displayName: Deploy to Stage environment
+  jobs:
+    - template: ./templates/adf-deploy.yml
+      parameters:
+        environment: 'Stage'
+        subscriptionEndpoint: 'spn-adf-Stage-ind-01'
+        adfName: 'adf-stage-01'
+        adfOverrideParameters: ''
+        adfFolder: 'adf-cust-cdd-release-01'
+        resourceGroup: 'rg-adf-stage-ind-01'
+        deployParameterFileName: 'adf-cdd-relaease-stage-uks-01'
