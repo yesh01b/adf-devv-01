@@ -13,7 +13,7 @@ stages:
 - stage: Deploy_test_uks
   displayName: Deploy to Test environment
   jobs:
-    - template: ./template/adf-deploy.yml
+    - template: ./templates/adf-deploy.yml
       parameters:
         environment: 'test'
         subscriptionEndpoint: 'spn-adf-test-ind-01'
