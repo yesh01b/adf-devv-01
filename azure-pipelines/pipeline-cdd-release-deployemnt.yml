@@ -1,0 +1,24 @@
+trigger: none
+pr: none
+
+resources:
+  repositories:
+  - repository: datafactory
+    type: github
+    name: yesh01b/adf-devv-01
+    endpoint: yesh01b
+    ref: 'adf_publish'
+
+stages:
+- stage: Deploy_test_uks
+  displayName: Deploy to Test environment
+  jobs:
+    - template: ./template/adf-deploy.yml
+      parameters:
+        environment: 'test'
+        subscriptionEndpoint: ''
+        adfName: 'adf-test-01'
+        adfOverrideParameters: ''
+        adfFolder: 'adf-cust-cdd-release-01'
+        resourceGroup: ''
+        deployParameterFileName: 'adf-cdd-relaease-test-uks-01'
