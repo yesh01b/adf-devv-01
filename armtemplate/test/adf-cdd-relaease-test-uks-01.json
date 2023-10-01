@@ -4,6 +4,10 @@
     "parameters": {
         "factoryName": {
             "value": "adf-cust-primary-test-uka-01"
-        }
+        },
+        "testparameter": {
+				"type": "string",
+				"value": "01"
+			}
     }
 }
