@@ -1,0 +1,12 @@
+{
+	"name": "adf-devv-ind-01",
+	"properties": {
+		"globalParameters": {
+			"test": {
+				"type": "string",
+				"value": "01"
+			}
+		}
+	},
+	"location": "eastus"
+}
