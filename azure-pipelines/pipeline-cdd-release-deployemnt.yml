@@ -16,9 +16,9 @@ stages:
     - template: ./template/adf-deploy.yml
       parameters:
         environment: 'test'
-        subscriptionEndpoint: ''
+        subscriptionEndpoint: 'spn-adf-test-ind-01'
         adfName: 'adf-test-01'
         adfOverrideParameters: ''
         adfFolder: 'adf-cust-cdd-release-01'
-        resourceGroup: ''
+        resourceGroup: 'rg-adf-test-ind-01'
         deployParameterFileName: 'adf-cdd-relaease-test-uks-01'
