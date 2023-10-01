@@ -17,7 +17,7 @@ parameters:
 jobs:
 - deployment: deploy_adf
   displayName: 'Deploy to Azure Data Factory'
-  pool: aci-es-agents
+  pool: Azure Pipelines
   
   environment: ${{ parameters.environment }}
   strategy:
