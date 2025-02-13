@@ -1,0 +1,9 @@
+{
+	"name": "adf-dev-11",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0a684e81-77d3-47c2-a950-20badb41d3ac",
+		"tenantId": "5eaea4f0-f9fb-4e05-ac6c-f3dbaecda32d"
+	}
+}
